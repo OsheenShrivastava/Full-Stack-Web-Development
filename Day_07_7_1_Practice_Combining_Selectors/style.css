@@ -1,0 +1,24 @@
+/* Group */
+h1, h2 {
+    color: blueviolet;
+}
+
+/* Child */
+div > p {
+    color: firebrick;
+}
+
+/* Descendent */
+.list li {
+    color: blue;
+}
+
+/* Chaining */
+li.done {
+    color: seagreen;
+}
+
+/* Combining Combiners */
+ul p.done{
+    font-size: 0.5rem;
+}

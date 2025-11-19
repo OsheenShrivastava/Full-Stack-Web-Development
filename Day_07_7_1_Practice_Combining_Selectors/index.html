@@ -1,0 +1,49 @@
+
+<!-- TODO-1 - Define doc type declaration as html. -->
+<!-- TODO-2 - Define html element and set language as english. -->
+<!-- TODO-3 - Add head element. Inside head define char set encoding as "UTF-8",Title of website as "Combining CSS Selectors". -->
+<!-- TODO-4 - Add <link> tag to link external style sheet. Add rel and href to it. -->
+<!-- TODO-5 - Add <body> tag. Inside it add <h1> tag with text "To Do List". -->
+<!-- TODO-6 - Add <h2> tag with text "Monday". -->
+<!-- TODO-7 - Add <div> tag with class="done". Inside it add <p> tag with class="done and text as "Do these things today!". -->
+<!-- TODO-8 - Add <ul> tag with class="list". Inside it add 3 <li> tags. 1st <li> tag will have only text as "Wash Clothes". -->
+<!-- TODO-9 - 2nd <li> tag will have class="done" and text as "Read." 3rd <li> tag will aslo have class="done" and text as "Maths Questions". -->
+<!-- TODO-10 - Close </ul> and </div> tags. -->
+<!-- TODO-11 - Create another <ul> tag. Add <p> tag with class="done". Its text will be "Other items". Close </ul> tag. -->
+<!-- TODO-12 - Add <p> tag with text "he best preparation for tomorrow is doing your best today.". -->
+<!-- TODO-13 - Close <body> and <html> tags. -->
+<!-- TODO-14 - Create a file "style.css". Using "Group" selector add h1, h2 and define their color: blueviolet;. -->
+<!-- TODO-15 - Using "Child" selector add div > p for this para --- "Do these things today!" and set itS color to color: firebrick;. -->
+<!-- TODO-16 - Using "Descendent" selector add .list li for "Wash Clothes" to change its color to color: blue;. -->
+<!-- TODO-17 - Using "Chaining" selector add li.done for both "Read" and "Maths Questions" to change their color to color: seagreen;.  -->
+<!-- TODO-18 - Combine selectors "Descendent" and "Chaining" ul p.done for "Other items" to change its font-size to font-size: 0.5rem;. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Combining CSS Selectors</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <h1>To Do List</h1>
+  <h2>Monday</h2>
+  <div class="box">
+    <p class="done">Do these things today!</p>
+    <ul class="list">
+      <li>Wash Clothes</li>
+      <li class="done">Read</li>
+      <li class="done">Maths Questions</li>
+    </ul>
+  </div>
+
+  <ul>
+    <p class="done">Other items</p>
+  </ul>
+  <p>The best preparation for tomorrow is doing your best today.</p>
+
+</body>
+
+</html>
