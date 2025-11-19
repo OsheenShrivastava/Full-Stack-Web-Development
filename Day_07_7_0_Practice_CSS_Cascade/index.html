@@ -1,0 +1,45 @@
+
+<!-- TODO-1 - Define doc type declaration as html. -->
+<!-- TODO-2 - Define html element and set language as english. -->
+<!-- TODO-3 - Add head element. Inside head define char set encoding as "UTF-8",Title of website as "CSS Cascade". -->
+<!-- TODO-4 - Add <link> tag to link external style sheet. Add rel and href to it. -->
+<!-- TODO-5 - Add <body> tag. Inside it add <div> tag which has id="outer-box" and class="box". -->
+<!-- TODO-6 - Add another <div> tag inside this which has class="box". -->
+<!-- TODO-7 - Inside this add <p> tag and add its text as "Yellow Text". Add another <div> with class="box inner-box". -->
+<!-- TODO-8 - Inside this <div> add <p> tag with class="White-text" and text as "White Text". Close both <div>. -->
+<!-- TODO-9 - Copy the code inside 2nd <div> and paste it below to create the same code. So 2 <div> are created with same text. -->
+<!-- TODO-10 - Close <body> and <html> tags. -->
+<!-- TODO-11 - Create a file "style.css". Create a class .box and add background-color: blue; , padding: 10px; to it. This is to add background color blue for 1st 
+div with 10px padding. -->
+<!-- TODO-12 - Create element selector p and add color: yellow; , margin: 0; , padding: 0; inside it. This is to add yeelow color to all <p> tags with 0 padding. -->
+<!-- TODO-13 - Create a class .white-text and add color: white; inside it. This is to change color of text of every element having class white-text. -->
+<!-- TODO-14 - Create a class .inner-box and add background-color: red; inside it. This is to change background color of 3rd <div> with .inner-box class. -->
+<!-- TODO-15 - Create an id #outer-box and add background-color: purple; inside it. This is to change background color of 1st <div> with #outer-box id. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Cascade</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div id="outer-box" class="box">
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+    <div class="box">
+      <p>Yellow Text</p>
+      <div class="box inner-box">
+        <p class="white-text">White Text</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
