@@ -1,0 +1,61 @@
+
+<!-- TODO-1 - Define the document type using <!DOCTYPE html>. -->
+<!-- TODO-2 - Add the <html> root element and set language to English (lang="en"). -->
+<!-- TODO-3 - Add the <head> section to store metadata and styles. -->
+<!-- TODO-4 - Inside <head>, add <meta charset="UTF-8"> for proper character encoding. -->
+<!-- TODO-5 - Add <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> to control scaling and responsiveness on mobile devices. 
+name="viewport" - Refers to the visible area of a web page on a device (phone, tablet, laptop). content="width=device-width - Set the page width equal to the 
+device’s screen width. initial-scale=1.0 - no zoom. -->
+<!-- TODO-6 - Add a <title> tag and set it to "Media Query". -->
+<!-- TODO-7 - Add a <style> tag inside <head> to write CSS. -->
+<!-- TODO-8 - Apply default styling to body: Set background-color: aquamarine;. This will be the default color for large screens unless overridden. -->
+<!-- TODO-9 - Add media query for small mobile devices between (319px–480px) and set body background-color to lightsalmon. -->
+<!-- TODO-10 - Add media query for tablets/small screens between (481px–1200px) and set body background-color to powderblue. -->
+<!-- TODO-11 - Add media query for laptops/desktops between (1201px–1600px) and set body background-color to limegreen. -->
+<!-- TODO-12 - Add media query for very large screens (≥1601px) and set body background-color to seagreen. -->
+<!-- TODO-13 - Close the <style> tag properly. -->
+<!-- TODO-14 - Add the <body> section for visible content (currently empty). -->
+<!-- TODO-15 - Close the <body> and <html> tags. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>Media Query</title>
+  <style>
+    body {
+      background-color: aquamarine;
+    }
+
+    @media (min-width: 319px) and (max-width: 480px) {
+      body {
+        background-color: lightsalmon;
+      }
+    }
+
+    @media (min-width: 481px) and (max-width: 1200px) {
+      body {
+        background-color: powderblue;
+      }
+    }
+
+    @media (min-width: 1201px) and (max-width: 1600px) {
+      body {
+        background-color: limegreen;
+      }
+    }
+
+    @media (min-width: 1601px) {
+      body {
+        background-color: seagreen;
+      }
+    }
+  </style>
+</head>
+
+<body>
+</body>
+
+</html>
