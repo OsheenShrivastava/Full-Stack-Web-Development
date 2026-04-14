@@ -1,0 +1,82 @@
+
+<!-- TODO-1 - Define document type using <!DOCTYPE html>. -->
+<!-- TODO-2 - Create root <html> element with language set to English. -->
+<!-- TODO-3 - Add <head> section to store metadata and external resources. -->
+<!-- TODO-4 - Add character encoding using <meta charset="UTF-8">. -->
+<!-- TODO-5 - Add <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1"> to control scaling and responsiveness on mobile devices. 
+name="viewport" - Refers to the visible area of a web page on a device (phone, tablet, laptop). content="width=device-width - Set the page width equal to the 
+device’s screen width. initial-scale=1.0 - no zoom. -->
+<!-- TODO-6 - Add a <title> tag and set it to "Agency". -->
+<!-- TODO-7 - Link external CSS file using <link rel="stylesheet" href="./style.css">. -->
+<!-- TODO-8 - Preconnect to Google Fonts for performance optimization. -->
+<!-- TODO-9 - Import "Poppins" font from Google Fonts. -->
+<!-- TODO-10 - Start <body> section where visible content goes. -->
+<!-- TODO-11 - Create file named style.css and add body element. Add font-family: "Poppins", sans-serif;, margin: 50px 50px 0 50px; (Top, Right, Bottom, Left), 
+background-color: #faf9f6;, display: flex;, flex-direction: column; and min-height: 95vh; in it. Here display-> flex - Makes the element a flex container. 
+flex-direction: column; - Layout will be vertical. -->
+<!-- TODO-12 - Create a main container <div class="main"> to wrap all main content. Create this class in style.css and add flex: 1; in it. flex: 1 - Take up all 
+the remaining available space inside the flex container. -->
+<!-- TODO-13 - Add logo image with class="logo" for styling. Add @media (max-width: 680px) and inside it create this class and add width: 100px;. 
+@media (max-width: 680px) is added to adjust the content for small screen with width upto 680px like mobile screen. -->
+<!-- TODO-14 - Add main heading <h1> with a highlighted word using <span class="creative">. Use <br> to shift data to next line. Create this class in style.css
+and add color: midnightblue;. -->
+<!-- TODO-15 - Add h1 as element selector in style.css and add font-size: 5rem; in it. Add h1 inside media query as well with font-size: 3.5rem; and 
+text-align: center;. -->
+<!-- TODO-16 - Create first content section: Use classes: "left card". Create "left" class in style.css and add float: left;. float: left; - Move this element to
+the left side of its container and let other content wrap around it. --> 
+<!-- TODO-17 - Create class "card" and add width: 45%;. Add "card" class inside media query and add width: 100%;, display: block;, margin-bottom: 30px; and 
+text-align: justify;. display: block; - make this element behave like a block element, it takes full width and starts on a new line. width, height, margin, 
+padding can be set. text-align: justify; - Align text so that both the left and right edges are straight (even). -->
+<!-- TODO-18 - Add image with class="tile-image". Create this class and add height: 200px;, float: left; and margin-right: 50px;. Add class "card img" in media 
+query and add margin-bottom: 10px;, width: 100%;, display: inline; and object-fit: cover;. display: inline; - Stays in the same line as other elements and takes 
+only the width of its content. object-fit: cover; - is used mainly with images (<img>) or videos to fill a container completely without distortion. Fill the entire 
+container. Keep its aspect ratio. -->
+<!-- TODO-19 - Add <h2> tag for title with class="card-title". Set desired text. Add <p> tag for description with class="card-text". Set desired text. 
+Close the div. -->
+<!-- TODO-20 - Create second content section: Use classes: "right card". Create class "right" and add float: right; in it. Add image with class="tile-image". 
+float: right; - Move this element to the right side of its container and let other content wrap around it. -->
+<!-- TODO-21 - Add <h2> tag for title with class="card-title". Set desired text. Add <p> tag for description with class="card-text". Set desired text. 
+Close the div. -->
+<!-- TODO-22 - Close main container </div>. -->
+<!-- TODO-23 - Add <footer> section at bottom of page. Add <p> tag and inside it add footer text: "Create. Develop. Design.". Add footer element selector in 
+style.css and add text-align: right;, color: midnightblue; in it. -->
+<!-- TODO-24 - Close </body> and </html> tags. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agency</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="main">
+    <img class="logo" src="./assets/images/logo.png" alt="logo">
+    <h1>We are a <span class="creative">Creative</span> <br> Design Agency</h1>
+    <div class="left card"><img class="tile-image" src="./assets/images/beautiful.jpg" alt="hand and flower in water">
+      <h2 class="card-title">Beauty</h2>
+      <p class="card-text">We strive to create the most beautiful websites for all your needs. Working closely with you
+        to
+        design and
+        develop an amazing website for your business.</p>
+    </div>
+
+    <div class="right card"><img class="tile-image" src="./assets/images/construction.jpg" alt="metal structure">
+      <h2 class="card-title">Construction</h2>
+      <p>Built by our team of professional developers, we ensure the most rigourous and modern websites. Built from
+        scratch using HTML and CSS. Only the best for you.</p>
+    </div>
+
+  </div>
+  <footer>
+    <p>Create. Develop. Design.</p>
+  </footer>
+</body>
+
+</html>
