@@ -1,0 +1,121 @@
+
+<!-- TODO-1 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-2 - Add the root <html> tag to contain the complete webpage. -->
+<!-- TODO-3 - Create the <head> section to store title and CSS styles. -->
+<!-- TODO-4 - Add the page title using <title>Chessboard</title>. -->
+<!-- TODO-5 - Open the <style> tag inside the head section to write internal CSS. -->
+<!-- TODO-6 - Create the .container class to hold all chessboard squares. Apply display: grid; so the container uses CSS Grid layout. Create 8 rows using 
+grid-template-rows: 1fr repeated 8 times. Create 8 columns using grid-template-columns: 1fr repeated 8 times. Set width: 800px; so the board width becomes 8 
+squares × 100px. -->
+<!-- TODO-7 - Create the .white class for white chessboard squares. Set background-color: #f0d9b5; for light squares. Set height: 100px; for each white square. 
+Set width: 100px; for each white square. -->
+<!-- TODO-8 - Create the .black class for black chessboard squares. Set background-color: #b58863; for dark squares. Set height: 100px; for each black square. Set
+width: 100px; for each black square. -->
+<!-- TODO-9 - Close the <style> tag after all CSS rules are complete. -->
+<!-- TODO-10 - Close the <head> section and open the <body>. -->
+<!-- TODO-11 - Create the main <div class="container"> wrapper for the chessboard. -->
+<!-- TODO-12 - Add row 1 with alternating squares starting from white. -->
+<!-- TODO-13 - Add row 2 with alternating squares starting from black. -->
+<!-- TODO-14 - Repeat it until total squares added are 64 (8 × 8). -->
+<!-- TODO-15 - Ensure white and black classes alternate correctly like a real chessboard. -->
+<!-- TODO-16 - Close the container </div> after all squares are added. -->
+<!-- TODO-17 - Close the <body> tag. -->
+<!-- TODO-18 - Close the root </html> tag. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Chessboard</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      width: 800px;
+    }
+
+    .white {
+      background-color: #f0d9b5;
+      height: 100px;
+      width: 100px;
+    }
+
+    .black {
+      background-color: #b58863;
+      height: 100px;
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+    <div class="black"></div>
+    <div class="white"></div>
+  </div>
+</body>
+
+</html>
