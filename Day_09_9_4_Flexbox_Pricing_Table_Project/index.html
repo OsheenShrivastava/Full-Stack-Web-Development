@@ -1,0 +1,156 @@
+
+<!-- TODO-1 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-2 - Add the root <html> tag to contain the full webpage. -->
+<!-- TODO-3 - Create the <head> section to store title, external links, and CSS styles. -->
+<!-- TODO-4 - Add the page title using <title>Flexbox Pricing Table</title>. -->
+<!-- TODO-5 - Add a preconnect link to https://fonts.googleapis.com for faster font loading. -->
+<!-- TODO-6 - Add a second preconnect link to https://fonts.gstatic.com with crossorigin attribute. -->
+<!-- TODO-7 - Import the Google Font "Sono" with weights 400 and 700 using <link>. -->
+<!-- TODO-8 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-9 - Target the body selector to apply page-wide font styling. Set font-family: "Sono", sans-serif; for clean modern 
+typography. -->
+<!-- TODO-10 - Create the .pricing-container class for the main pricing cards wrapper. Apply display: flex; to arrange pricing plans in
+a row. Use justify-content: center; to center cards horizontally. Use align-items: center; to center cards vertically. Add gap: 2rem; to 
+create space between pricing cards. Set height: 100vh; so the container fills the full screen height. -->
+<!-- TODO-11 - Create the .pricing-plan class for each pricing card. Apply flex: 1; so all cards share equal available space. Set 
+background-color: #f2f2f2; for a light card background. Add padding: 20px; for inner spacing inside cards. Add border-radius: 5px; for 
+rounded card corners. Use text-align: center; to center text inside each card. Set max-width: 400px; so cards do not stretch too 
+wide. -->
+<!-- TODO-12 - Create .plan-title class for plan names like Basic, Standard, Premium. Set font-size: 24px; for the plan title. Make plan 
+titles bold using font-weight: bold;. Add margin-bottom: 10px; below plan titles. -->
+<!-- TODO-13 - Create .plan-price class for monthly pricing text. Set font-size: 48px; for large pricing text. Make prices bold using 
+font-weight: bold;. Add margin-bottom: 10px; below pricing text. -->
+<!-- TODO-14 - Create .plan-features class for the features list. Remove bullets using list-style: none;. Remove default padding using 
+padding: 0;. Remove default margin using margin: 0;. -->
+<!-- TODO-15 - Target .plan-features li to style each feature item. Add margin-bottom: 20px; between list items. -->
+<!-- TODO-16 - Create .plan-button class for Sign Up buttons. Set background-color: #ff6600; for orange button color. Add 
+border-radius: 5px; for rounded button corners. Add padding: 10px; inside the button. Set text color to white using color: white;. 
+Remove border using border: none;. -->
+<!-- TODO-17 - Create media query using @media (max-width: 1250px). -->
+<!-- TODO-18 - Inside media query, set .pricing-container flex-direction: column; for vertical stacking on smaller screens. Set 
+height: 100%; inside media query for better mobile scrolling. -->
+<!-- TODO-19 - Close the <style> tag after CSS is complete. -->
+<!-- TODO-20 - Close the <head> section and open the <body>. -->
+<!-- TODO-21 - Create main <div class="pricing-container"> wrapper. -->
+<!-- TODO-22 - Create first pricing card using <div class="pricing-plan">. -->
+<!-- TODO-23 - Add first plan title as Basic with class "plan-title". -->
+<!-- TODO-24 - Add first plan price as $9.99/month with class "plan-price". -->
+<!-- TODO-25 - Add unordered list of Basic plan features with class "plan-features". Add 3 ordered list inside it. -->
+<!-- TODO-26 - Add first Sign Up button with class "plan-button". -->
+<!-- TODO-27 - Create second pricing card using <div class="pricing-plan">. -->
+<!-- TODO-28 - Add second plan title as Standard with class "plan-title". -->
+<!-- TODO-29 - Add second plan price as $19.99/month with class "plan-price". -->
+<!-- TODO-30 - Add unordered list of Standard plan features list with class "plan-features". Add 3 ordered list inside it. -->
+<!-- TODO-31 - Add second Sign Up button with class "plan-button". -->
+<!-- TODO-32 - Create third pricing card using <div class="pricing-plan">. -->
+<!-- TODO-33 - Add third plan title as Premium with class "plan-title". -->
+<!-- TODO-34 - Add third plan price as $49.99/month with class "plan-price". -->
+<!-- TODO-35 - Add unordered list of Premium plan features list with class "plan-features". Add 3 ordered list inside it.. -->
+<!-- TODO-36 - Add third Sign Up button with class "plan-button". -->
+<!-- TODO-37 - Close the main pricing-container div. -->
+<!-- TODO-38 - Close the <body> tag. -->
+<!-- TODO-39 - Close the root </html> tag. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+      }
+
+      .pricing-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height: 100vh;
+      }
+
+      .pricing-plan {
+        flex: 1;
+        background-color: #f2f2f2;
+        padding: 20px;
+        border-radius: 5px;
+        text-align: center;
+        max-width: 400px;
+      }
+
+      .plan-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .plan-price {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      .plan-features {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .plan-features li {
+        margin-bottom: 20px;
+      }
+
+      .plan-button {
+        background-color: #ff6600;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        border: none;
+      }
+    
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          height: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
