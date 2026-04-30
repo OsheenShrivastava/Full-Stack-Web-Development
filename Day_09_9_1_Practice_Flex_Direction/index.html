@@ -1,0 +1,83 @@
+
+<!-- TODO-1 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 standards. -->
+<!-- TODO-2 - Add the root <html> element and set the language to English using lang="en". -->
+<!-- TODO-3 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-4 - Add <meta charset="UTF-8"> to support proper text encoding. -->
+<!-- TODO-5 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive layout on mobile devices. -->
+<!-- TODO-6 - Add the page title using <title>Flex Direction</title>. -->
+<!-- TODO-7 - Open the <style> tag inside the head section to write internal CSS. -->
+<!-- TODO-8 - Create the .container class selector to style the main flex container. Set text color to white using color: white;. Add a gold border using 
+border: 5px solid gold;. Use display: inline-flex; so the container behaves like an inline element with flex properties. Set flex-direction: column; so all 
+child items stack vertically from top to bottom. -->
+<!-- TODO-9 - Use the child combinator selector .container > * to target all direct children of .container. Set flex-basis: 100px; so each flex item gets 
+an initial size of 100px. -->
+<!-- TODO-10 - Create .red class and set background-color: #eb4d4b; -->
+<!-- TODO-11 - Create .orange class and set background-color: #f0932b; -->
+<!-- TODO-12 - Create .yellow class and set background-color: #f6e58d; -->
+<!-- TODO-13 - Create .green class and set background-color: #6ab04c; -->
+<!-- TODO-14 - Create .blue class and set background-color: #4834d4; -->
+<!-- TODO-15 - Create .indigo class and set background-color: #30336b; -->
+<!-- TODO-16 - Create .purple class and set background-color: #be2edd; -->
+<!-- TODO-17 - Close the <style> tag after all CSS rules are written. -->
+<!-- TODO-18 - Close the <head> section and begin the <body> section. -->
+<!-- TODO-19 - Create a <div> with class="container" to hold all rainbow boxes. -->
+<!-- TODO-20 - Add first child <div class="red">Red</div>. -->
+<!-- TODO-21 - Add second child <div class="orange">Orange</div>. -->
+<!-- TODO-22 - Add third child <div class="yellow">Yellow</div>. -->
+<!-- TODO-23 - Add fourth child <div class="green">Green</div>. -->
+<!-- TODO-24 - Add fifth child <div class="blue">Blue</div>. -->
+<!-- TODO-25 - Add sixth child <div class="indigo">Indigo</div>. -->
+<!-- TODO-26 - Add seventh child <div class="purple">Purple</div>. -->
+<!-- TODO-27 - Close the container </div>. -->
+<!-- TODO-28 - Close the <body> section. -->
+<!-- TODO-29 - Close the root </html> tag. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex Direction</title>
+
+  <!-- HINT:
+  https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors
+  https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators 
+  -->
+
+  <style>
+    .container {
+      color: white;
+      border: 5px solid gold;
+      display: inline-flex;
+      flex-direction: column;
+    }
+
+    .container > * {
+      flex-basis: 100px;
+    }
+
+    .red {background-color: #eb4d4b;}
+    .orange {background-color: #f0932b;}
+    .yellow {background-color: #f6e58d;}
+    .green {background-color: #6ab04c;}
+    .blue {background-color: #4834d4;}
+    .indigo {background-color: #30336b;}
+    .purple {background-color: #be2edd;}
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="red">Red</div>
+    <div class="orange">Orange</div>
+    <div class="yellow">Yellow</div>
+    <div class="green">Green</div>
+    <div class="blue">Blue</div>
+    <div class="indigo">Indigo</div>
+    <div class="purple">Purple</div>
+  </div>
+  
+</body>
+
+</html>
