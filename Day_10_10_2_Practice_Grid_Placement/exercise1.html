@@ -1,0 +1,68 @@
+
+<!-- TODO-1 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-2 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-3 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-4 - Add <meta charset="UTF-8"> for proper text encoding support (especially for emojis). -->
+<!-- TODO-5 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive design. -->
+<!-- TODO-6 - Add the page title using <title>Grid Placement</title>. -->
+<!-- TODO-7 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-8 - Target the body selector to remove default browser spacing. Set padding: 0; to remove default padding. Set margin: 0; to remove default margin. -->
+<!-- TODO-9 - Create the .container class for the grid layout wrapper. Set height: 100vh; so the grid takes full viewport height. Apply display: grid; to enable
+CSS Grid. Add gap: 3rem; to create spacing between grid items. Define grid-template-columns: 1fr 1fr 1.5fr; to create three columns with the third wider. Define 
+grid-template-rows: 1fr 1fr; to create two equal rows. -->
+<!-- TODO-10 - Create the .item class for all grid elements. Set font-size: 5rem; to enlarge emoji icons. Set color: white; for text visibility. Set 
+font-family: Arial, Helvetica, sans-serif; for consistent font rendering. Set background-color: blueviolet; for visual styling. -->
+<!-- TODO-11 - Use display: flex; inside .item to enable Flexbox alignment. Use justify-content: center; to center content horizontally. Use align-items: center;
+to center content vertically. -->
+<!-- TODO-12 - Close the <style> tag after CSS definitions. -->
+<!-- TODO-13 - Close the <head> section and open the <body>. -->
+<!-- TODO-14 - Create the main <div class="container"> grid wrapper. -->
+<!-- TODO-15 - Add first grid item <div class="item cowboy">🤠</div>. -->
+<!-- TODO-16 - Add second grid item <div class="item astronaut">👨‍🚀</div>. -->
+<!-- TODO-17 - Add third grid item <div class="item book">📖</div>. -->
+<!-- TODO-18 - Close the container </div>. -->
+<!-- TODO-19 - Close the <body> tag. -->
+<!-- TODO-20 - Close the root </html> tag. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Placement</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      height: 100vh;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .item {
+      font-size: 5rem;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item cowboy">🤠</div>
+    <div class="item astronaut">👨‍🚀</div>
+    <div class="item book">📖</div>
+  </div>
+</body>
+
+</html>
