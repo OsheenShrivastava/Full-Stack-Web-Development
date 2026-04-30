@@ -1,0 +1,259 @@
+
+<!-- index.html file -->
+<!-- TODO-1 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-2 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-3 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-4 - Add <meta charset="UTF-8"> for proper text encoding support. -->
+<!-- TODO-5 - Add <meta name="google" content="notranslate"> to prevent automatic page translation by Google. -->
+<!-- TODO-6 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive layout on mobile devices. -->
+<!-- TODO-7 - Add the page title using <title>Grid Fundamentals</title>. -->
+<!-- TODO-8 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-9 - Target the body selector for page-wide font styling. Set font-family: sans-serif; for clean readable text. -->
+<!-- TODO-10 - Create the .container class for the main content wrapper. Apply display: flex; to use Flexbox layout. Use justify-content: center; to center child 
+elements vertically (main axis). Use align-items: center; to center child elements horizontally (cross axis). Set flex-direction: column; so all items stack 
+vertically. Set height: 100vh; so the container fills the full viewport height. Set background-color: #f2f2f2; for a light gray page background. -->
+<!-- TODO-11 - Create the .item class for all navigation links. Set width: 200px; so all buttons/links have equal width. Add margin: 20px; to create spacing 
+between each link item. Set background-color: #3498db; for blue button-style links. Set color: #fff; to make text white. Use text-align: center; to center link 
+text horizontally. Set line-height: 2; for vertical spacing inside links. Set font-size: 24px; for larger readable text. -->
+<!-- TODO-12 - Close the <style> tag after CSS rules are complete. -->
+<!-- TODO-13 - Close the <head> section and open the <body>. -->
+<!-- TODO-14 - Create the main <div class="container"> wrapper. -->
+<!-- TODO-15 - Add heading <h1>Grid Sizing</h1>. -->
+<!-- TODO-16 - Add first anchor link with class="item" linking to fixed-size.html and text "Fixed Size". -->
+<!-- TODO-17 - Add second anchor link with class="item" linking to auto-size.html and text "Auto Size". -->
+<!-- TODO-18 - Add third anchor link with class="item" linking to fractional-size.html and text "Fractional Size". -->
+<!-- TODO-19 - Add fourth anchor link with class="item" linking to minmax-size.html and text "MinMax Size". -->
+<!-- TODO-20 - Add fifth anchor link with class="item" linking to repeat.html and text "Repeat". -->
+<!-- TODO-21 - Add sixth anchor link with class="item" linking to test.html and text "Test". -->
+<!-- TODO-22 - Ensure all anchor tags use relative paths with ./ prefix. -->
+<!-- TODO-23 - Close the container </div> after all content is added. -->
+<!-- TODO-24 - Close the <body> tag. -->
+<!-- TODO-25 - Close the root </html> tag. -->
+
+<!-- auto-size.html file -->
+<!-- TODO-26 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-27 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-28 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-29 - Add <meta charset="UTF-8"> for proper text encoding support. -->
+<!-- TODO-30 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive scaling on mobile devices. -->
+<!-- TODO-31 - Add the page title using <title>Auto Size Grid</title>. -->
+<!-- TODO-32 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-33 - Create the .grid-container class for the main grid wrapper. -->
+<!-- TODO-34 - Apply display: grid; to enable CSS Grid layout. Set grid-template-rows: 100px auto; to create two rows where the first row is fixed and the second
+row adjusts automatically. Set grid-template-columns: 200px auto; to create two columns where the first column is fixed and the second column adjusts 
+automatically. -->
+<!-- TODO-35 - Create the .grid-item class for all grid boxes. Set font-size: 3rem; for large visible numbers inside the grid items. Set 
+background-color: darkviolet; for item background color. Add border: 5px solid goldenrod; around each grid item. Set color: white; so text is visible on dark 
+background. -->
+<!-- TODO-36 - Close the <style> tag after all CSS rules are complete. -->
+<!-- TODO-37 - Close the <head> section and open the <body>. -->
+<!-- TODO-38 - Add heading <h1>Auto Size Grid</h1>. -->
+<!-- TODO-39 - Create the main <div class="grid-container"> wrapper. -->
+<!-- TODO-40 - Add first grid item using <div class="grid-item">1</div>. -->
+<!-- TODO-41 - Add second grid item using <div class="grid-item">2</div>. -->
+<!-- TODO-42 - Add third grid item using <div class="grid-item">3</div>. -->
+<!-- TODO-43 - Add fourth grid item using <div class="grid-item">4</div>. -->
+<!-- TODO-44 - Close the grid-container </div>. -->
+<!-- TODO-45 - Close the <body> tag. -->
+<!-- TODO-46 - Close the root </html> tag. -->
+
+<!-- fixed-size.html file -->
+<!-- TODO-47 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-48 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-49 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-50 - Add <meta charset="UTF-8"> for proper text encoding support. -->
+<!-- TODO-51 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive scaling on mobile devices. -->
+<!-- TODO-52 - Add the page title using <title>Fixed Size Grid</title>. -->
+<!-- TODO-53 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-54 - Create the .grid-container class for the main grid wrapper. -->
+<!-- TODO-55 - Apply display: grid; to enable CSS Grid layout. Set grid-template-rows: 100px 200px; to create two fixed-height rows. Set 
+grid-template-columns: 400px 800px; to create two fixed-width columns. -->
+<!-- TODO-56 - Create the .grid-item class for all grid boxes. Set font-size: 3rem; for large visible numbers inside the grid items. Set 
+background-color: darkviolet; for item background color. Add border: 5px solid goldenrod; around each grid item. Set color: white; so text is visible on dark 
+background. -->
+<!-- TODO-57 - Close the <style> tag after all CSS rules are complete. -->
+<!-- TODO-58 - Close the <head> section and open the <body>. -->
+<!-- TODO-59 - Add heading <h1>Fixed Size Grid</h1>. -->
+<!-- TODO-60 - Create the main <div class="grid-container"> wrapper. -->
+<!-- TODO-61 - Add first grid item using <div class="grid-item">1</div>. -->
+<!-- TODO-62 - Add second grid item using <div class="grid-item">2</div>. -->
+<!-- TODO-63 - Add third grid item using <div class="grid-item">3</div>. -->
+<!-- TODO-64 - Add fourth grid item using <div class="grid-item">4</div>. -->
+<!-- TODO-65 - Close the grid-container </div>. -->
+<!-- TODO-66 - Close the <body> tag. -->
+<!-- TODO-67 - Close the root </html> tag. -->
+
+<!-- fractional-size.html file -->
+<!-- TODO-68 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-69 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-70 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-71 - Add <meta charset="UTF-8"> for proper text encoding support. -->
+<!-- TODO-72 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive scaling on mobile devices. -->
+<!-- TODO-73 - Add the page title using <title>Fractional Size Grid</title>. -->
+<!-- TODO-74 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-75 - Create the .grid-container class for the main grid wrapper. Apply display: grid; to enable CSS Grid layout. Set grid-template-rows: 1fr 2fr; to 
+create two rows where the second row gets twice the space of the first row. Set grid-template-columns: 1fr 2fr; to create two columns where the second column gets
+twice the space of the first column. -->
+<!-- TODO-76 - Create the .grid-item class for all grid boxes. Set font-size: 3rem; for large visible numbers inside grid items. Set background-color: darkviolet; 
+for item background color. Add border: 5px solid goldenrod; around each grid item. Set color: white; so text is visible on dark background. -->
+<!-- TODO-77 - Close the <style> tag after all CSS rules are complete. -->
+<!-- TODO-78 - Close the <head> section and open the <body>. -->
+<!-- TODO-79 - Add heading <h1>Fractional Size Grid</h1>. -->
+<!-- TODO-80 - Create the main <div class="grid-container"> wrapper. -->
+<!-- TODO-81 - Add first grid item using <div class="grid-item">1</div>. -->
+<!-- TODO-82 - Add second grid item using <div class="grid-item">2</div>. -->
+<!-- TODO-83 - Add third grid item using <div class="grid-item">3</div>. -->
+<!-- TODO-84 - Add fourth grid item using <div class="grid-item">4</div>. -->
+<!-- TODO-85 - Close the grid-container </div>. -->
+<!-- TODO-86 - Close the <body> tag. -->
+<!-- TODO-87 - Close the root </html> tag. -->
+
+<!-- minmax-size.html file -->
+<!-- TODO-88 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-89 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-90 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-91 - Add <meta charset="UTF-8"> for proper text encoding support. -->
+<!-- TODO-92 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive scaling on mobile devices. -->
+<!-- TODO-93 - Add the page title using <title>MizMax Size Grid</title>. -->
+<!-- TODO-94 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-95 - Create the .grid-container class for the main grid wrapper. Apply display: grid; to enable CSS Grid layout. Set 
+grid-template-rows: 200px minmax(400px, 5fr); to create two rows where the first row is fixed and the second row has a minimum of 400px and can grow up to 5fr. 
+Set grid-template-columns: 200px minmax(400px, 5fr); to create two columns where the first column is fixed and the second column has a minimum of 400px and can 
+grow up to 5fr. -->
+<!-- TODO-96 - Create the .grid-item class for all grid boxes. Set font-size: 3rem; for large visible numbers inside the grid items. Set 
+background-color: darkviolet; for item background color. Add border: 5px solid goldenrod; around each grid item. Set color: white; so text is visible on dark 
+background. -->
+<!-- TODO-97 - Close the <style> tag after all CSS rules are complete. -->
+<!-- TODO-98 - Close the <head> section and open the <body>. -->
+<!-- TODO-99 - Add heading <h1>MinMax Size Grid</h1>. -->
+<!-- TODO-100 - Create the main <div class="grid-container"> wrapper. -->
+<!-- TODO-101 - Add first grid item using <div class="grid-item">1</div>. -->
+<!-- TODO-102 - Add second grid item using <div class="grid-item">2</div>. -->
+<!-- TODO-103 - Add third grid item using <div class="grid-item">3</div>. -->
+<!-- TODO-104 - Add fourth grid item using <div class="grid-item">4</div>. -->
+<!-- TODO-105 - Close the grid-container </div>. -->
+<!-- TODO-106 - Close the <body> tag. -->
+<!-- TODO-107 - Close the root </html> tag. -->
+
+<!-- repeat.html file -->
+<!-- TODO-108 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-109 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-110 - Create the <head> section to store metadata, title, and CSS styles. -->
+<!-- TODO-111 - Add <meta charset="UTF-8"> for proper text encoding support. -->
+<!-- TODO-112 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive scaling on mobile devices. -->
+<!-- TODO-113 - Add the page title using <title>Repeat Grid</title>. -->
+<!-- TODO-114 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-115 - Create the .grid-container class for the main grid wrapper. Apply display: grid; to enable CSS Grid layout. Set 
+grid-template-rows: repeat(2, 200px); to create 2 rows each 200px high. Set grid-template-columns: repeat(2, 200px); to create 2 columns each 200px wide. Set 
+grid-auto-rows: 300px; so any extra automatically created rows become 300px high. -->
+<!-- TODO-116 - Create the .grid-item class for all grid boxes. Set font-size: 3rem; for large visible numbers inside the grid items. Set 
+background-color: darkviolet; for item background color. Add border: 5px solid goldenrod; around each grid item. Set color: white; so text is visible on dark 
+background. -->
+<!-- TODO-117 - Close the <style> tag after all CSS rules are complete. -->
+<!-- TODO-118 - Close the <head> section and open the <body>. -->
+<!-- TODO-119 - Add heading <h1>Repeat</h1>. -->
+<!-- TODO-120 - Create the main <div class="grid-container"> wrapper. -->
+<!-- TODO-121 - Add first grid item using <div class="grid-item">1</div>. -->
+<!-- TODO-122 - Add second grid item using <div class="grid-item">2</div>. -->
+<!-- TODO-123 - Add third grid item using <div class="grid-item">3</div>. -->
+<!-- TODO-124 - Add fourth grid item using <div class="grid-item">4</div>. -->
+<!-- TODO-125 - Add fifth grid item using <div class="grid-item">5</div>. -->
+<!-- TODO-126 - Ensure first four items fill the 2 × 2 grid, and fifth item moves to an auto-created third row. -->
+<!-- TODO-127 - Close the grid-container </div>. -->
+<!-- TODO-128 - Close the <body> tag. -->
+<!-- TODO-129 - Close the root </html> tag. -->
+
+<!-- test.html file -->
+<!-- TODO-130 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-131 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-132 - Create the <head> section to store metadata, title, CSS styles, and future scripts. -->
+<!-- TODO-133 - Add <meta charset="UTF-8"> for proper text encoding support. -->
+<!-- TODO-134 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsive scaling on mobile devices. -->
+<!-- TODO-135 - Add the page title using <title>CSS Grid Sizing Exercise</title>. -->
+<!-- TODO-136 - Open the <style> tag inside the head section for internal CSS. -->
+<!-- TODO-137 - Target the body selector for overall page styling. Set font-family: Arial, sans-serif; for readable text. Apply display: flex; to use Flexbox 
+layout. Set flex-direction: column; so page content stacks vertically. Use align-items: center; to horizontally center content. Use justify-content: start; to 
+align content from the top. Set background-color: #f0f0f0; for a light page background. -->
+<!-- TODO-138 - Target the textarea element for custom input styling. Set width: 80%; so textarea uses most of the page width. Set min-height: 150px; for enough 
+typing space. Add margin-top: 20px; above textarea. Set resize: vertical; so only vertical resizing is allowed. Set font-family: monospace; for code editor 
+appearance. -->
+<!-- TODO-139 - Target the button element for styling. Add margin-top: 10px; above button. Add padding: 10px 20px; for clickable spacing. Set 
+background-color: #4285f4; for blue button color. Set color: white; for visible button text. Set font-size: 16px; for readable button text. Remove border using 
+border: none;. Add cursor: pointer; so pointer appears on hover. -->
+<!-- TODO-140 - Create the .parent class for the reference green grid container. Apply display: grid; to enable CSS Grid layout. Set grid-template-rows: 1fr 1fr 2fr; 
+for three rows with proportional sizing. Set grid-template-columns: auto 400px minmax(200px, 500px); for mixed column sizing. Set grid-auto-rows: 50px; for extra 
+rows created automatically. Set width: 80%; for container width. Set background-color: #ddd; for light gray background. Add padding: 20px; inside container. Add 
+margin: 2rem; around container. -->
+<!-- TODO-141 - Use .parent > * selector to style all direct child grid items. Set background-color: seagreen; for green boxes. Set color: white; for readable text. 
+Set font-size: 18px; for content text. Add padding: 20px; inside items. Add border: 2px solid white; around each item. -->
+<!-- TODO-142 - Create the .grid-container class for the user practice purple grid. Set width: 80%; for consistent size with parent grid. Set background-color: #ddd;.
+Add padding: 20px;. Add margin: 2rem;. -->
+<!-- TODO-143 - Create the .grid-item class for purple boxes. Set background-color: darkviolet;. Set color: white;. Set font-size: 18px;. Add padding: 20px;. Add 
+border: 2px solid goldenrod;. -->
+<!-- TODO-144 - Close the <style> tag after all CSS rules are complete. -->
+<!-- TODO-145 - Close the <head> section and open the <body>. -->
+<!-- TODO-146 - Add heading <h1>CSS Grid Sizing Exercise</h1>. -->
+<!-- TODO-147 - Create <div class="parent"> as the example/reference grid. -->
+<!-- TODO-148 - Add 10 child div elements inside .parent showing different sizing labels. -->
+<!-- TODO-149 - Create <div class="grid-container" id="container"> as the user practice grid. -->
+<!-- TODO-150 - Add 10 child div elements with class="grid-item" inside it. -->
+<!-- TODO-151 - Add <textarea id="user-css"> for users to type CSS code. Set placeholder text: "Write your CSS code here...". Set rows="25" for a tall code editor 
+area. -->
+<!-- TODO-152 - Add starter CSS inside textarea for .grid-container. Include display: grid; in starter code. Include 
+grid-template-columns: auto 400px minmax(200px, 500px); in starter code. Include grid-template-rows: 1fr 1fr 2fr; in starter code. Include grid-auto-rows: 50px; 
+in starter code. -->
+<!-- TODO-153 - Add a button with text "Apply CSS". Use onclick="applyUserCss()" to run JavaScript function when clicked. -->
+<!-- TODO-154 - Open the <script> tag before closing body. Create function applyUserCss(). Use document.getElementById('user-css').value to get CSS typed by user. 
+Create a new <style> element using document.createElement('style'). Set style.innerHTML = userCss; to insert typed CSS. Append style tag to document.head using 
+document.head.appendChild(style). -->
+<!-- TODO-155 - Close the <script> tag. -->
+<!-- TODO-156 - Close the <body> tag. -->
+<!-- TODO-157 - Close the root </html> tag. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="google" content="notranslate">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid Fundamentals</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f2f2f2;
+    }
+
+    .item {
+      width: 200px;
+      margin: 20px;
+      background-color: #3498db;
+      color: #fff;
+      text-align: center;
+      line-height: 2;
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Grid Sizing</h1>
+    <a class="item" href="./fixed-size.html">Fixed Size</a>
+    <a class="item" href="./auto-size.html">Auto Size</a>
+    <a class="item" href="./fractional-size.html">Fractional Size</a>
+    <a class="item" href="./minmax-size.html">MinMax Size</a>
+    <a class="item" href="./repeat.html">Repeat</a>
+    <a class="item" href="./test.html">Test</a>
+  </div>
+</body>
+
+</html>
