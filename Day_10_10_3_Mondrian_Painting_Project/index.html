@@ -1,0 +1,123 @@
+
+<!-- TODO-1 - Define the document type using <!DOCTYPE html> so the browser uses HTML5 mode. -->
+<!-- TODO-2 - Add the root <html> element with lang="en". -->
+<!-- TODO-3 - Create the <head> section for metadata, title, and styles. -->
+<!-- TODO-4 - Add <meta charset="UTF-8"> for proper text encoding. -->
+<!-- TODO-5 - Add <meta name="viewport" content="width=device-width, initial-scale=1.0"> for responsiveness. -->
+<!-- TODO-6 - Set page title using <title>Mondrian Project</title>. -->
+<!-- TODO-7 - Open the <style> tag to write internal CSS. -->
+<!-- TODO-8 - Style body using Flexbox for centering layout. Apply display: flex;. Use justify-content: center; for horizontal centering. Use align-items: center;
+for vertical centering. Set height: 100vh; to fill viewport height. Remove default spacing using padding: 0; and margin: 0;. -->
+<!-- TODO-9 - Create the .container class for the main grid layout. Apply display: grid; to enable CSS Grid. Set width: 748px; and height: 748px; for fixed canvas
+size. Add gap: 9px; to create black grid lines between items. Set background-color: #000; for gap color (grid lines). Define 
+grid-template-columns: 320px 198px 153px 50px; for column sizing. Define grid-template-rows: 414px 130px 155px 22px; for row sizing. -->
+<!-- TODO-10 - Create base .item class for all grid blocks. Set default background-color: #F0F1EC; (white blocks). -->
+<!-- TODO-11 - Create .red class and set background-color: #E72F24;. -->
+<!-- TODO-12 - Create .white1 class and apply grid-column: span 3; to stretch across 3 columns. -->
+<!-- TODO-13 - Create .white2 class and apply grid-row: span 2; to stretch vertically. -->
+<!-- TODO-14 - Create .white3 class and apply grid-column: span 2; and grid-row: span 2;. -->
+<!-- TODO-15 - Create .blue class and set background-color: #004592;. Add border-bottom: 10px solid #000; to create a thicker black separator. -->
+<!-- TODO-16 - Create .yellow class and set background-color: #F9D01E;. -->
+<!-- TODO-17 - Create .white4 class and apply grid-row: span 2;. -->
+<!-- TODO-18 - Create .black class and set background-color: #232629;. -->
+<!-- TODO-19 - Close the <style> tag. -->
+<!-- TODO-20 - Close the <head> section and open the <body>. -->
+<!-- TODO-21 - Create main <div class="container"> to hold all grid items. -->
+<!-- TODO-22 - Add first grid item with classes "item red". -->
+<!-- TODO-23 - Add second grid item with classes "item white1". -->
+<!-- TODO-24 - Add third grid item with classes "item white2". -->
+<!-- TODO-25 - Add fourth grid item with classes "item white3". -->
+<!-- TODO-26 - Add fifth grid item with classes "item blue". -->
+<!-- TODO-27 - Add sixth grid item with classes "item white4". -->
+<!-- TODO-28 - Add seventh grid item with class "item" (default white). -->
+<!-- TODO-29 - Add eighth grid item with classes "item yellow". -->
+<!-- TODO-30 - Add ninth grid item with classes "item black". -->
+<!-- TODO-31 - Close the container </div>. -->
+<!-- TODO-32 - Close the <body> tag. -->
+<!-- TODO-33 - Close the root </html> tag. -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 0;
+      margin: 0;
+    }
+
+    .container {
+      display: grid;
+      width: 748px;
+      height: 748px;
+      gap: 9px;
+      background-color: #000;
+      grid-template-columns: 320px 198px 153px 50px;
+      grid-template-rows: 414px 130px 155px 22px;
+    }
+
+    .item {
+      background-color: #F0F1EC;
+    }
+
+    .red {
+      background-color: #E72F24;
+    }
+
+    .white1 {
+      grid-column: span 3;
+    }
+
+    .white2 {
+      grid-row: span 2;
+    }
+
+    .white3 {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    .blue {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+    }
+
+    .white4 {
+      grid-row: span 2;
+    }
+
+    .black {
+      background-color: #232629;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+   <div class="container">
+    <div class="item red"></div>
+    <div class="item white1"></div>
+    <div class="item white2"></div>
+    <div class="item white3"></div>
+    
+    <div class="item blue"></div>
+    <div class="item white4"></div>
+
+    <div class="item"></div>
+    <div class="item yellow"></div>
+    <div class="item black"></div>
+   </div>
+</body>
+
+</html>
