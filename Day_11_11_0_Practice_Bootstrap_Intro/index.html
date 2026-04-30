@@ -1,0 +1,60 @@
+
+<!-- TODO-1 - Define the document type using <!doctype html> so the browser uses HTML5 mode. -->
+<!-- TODO-2 - Add the root <html> element and set language to English using lang="en". -->
+<!-- TODO-3 - Create the <head> section to include metadata, title, Bootstrap, and styles. -->
+<!-- TODO-4 - Add <meta charset="utf-8"> for proper text encoding. -->
+<!-- TODO-5 - Add <meta name="viewport" content="width=device-width, initial-scale=1"> for responsive layout. -->
+<!-- TODO-6 - Add the page title using <title>Bootstrap</title>. -->
+<!-- TODO-7 - Add Bootstrap CSS CDN link using <link> tag for styling components. Include integrity and crossorigin attributes for security and performance. -->
+<!-- TODO-8 - Open the <style> tag for custom CSS. -->
+<!-- TODO-9 - Create .flex-container class to center content using Flexbox. Apply display: flex; to enable Flexbox layout. Use justify-content: center; to center
+horizontally. Use align-items: center; to center vertically. Set height: 100vh; so container takes full viewport height. -->
+<!-- TODO-10 - Close the <style> tag. -->
+<!-- TODO-11 - Close the <head> section and open the <body>. -->
+<!-- TODO-12 - Create <div class="flex-container"> to wrap the card. -->
+<!-- TODO-13 - Add Bootstrap card component using <div class="card">. Set card width using inline style (e.g., width: 18rem). -->
+<!-- TODO-14 - Add image element <img> with class="card-img-top". Set src="flower.jpg" to display flower image. Add alt="flower image" for accessibility. -->
+<!-- TODO-15 - Create <div class="card-body"> for card content. -->
+<!-- TODO-16 - Add <h5 class="card-title"> for card heading. -->
+<!-- TODO-17 - Add <p class="card-text"> for description text. -->
+<!-- TODO-18 - Add <a class="btn btn-primary"> for Bootstrap button. -->
+<!-- TODO-19 - Close the card </div>. -->
+<!-- TODO-20 - Close the flex-container </div>. -->
+<!-- TODO-21 - Close the <body> tag. -->
+<!-- TODO-22 - Close the root </html> tag. -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap</title>
+  
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+   integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  
+  <style>
+    .flex-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container">
+    <div class="card" style="width: 18rem;">
+      <img src="flower.jpg" class="card-img-top" alt="flower image">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
